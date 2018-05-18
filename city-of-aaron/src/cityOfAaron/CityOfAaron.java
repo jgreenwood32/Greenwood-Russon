@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package city.of.aaron;
+package aaron;
 
 import model.Game;
 import model.Player;
