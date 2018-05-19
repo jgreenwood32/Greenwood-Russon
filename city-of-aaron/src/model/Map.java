@@ -10,9 +10,23 @@ package model;
  * @author ethanrusson
  */
 public class Map {
+    private String[][] Location;
+    private Point currentLocation; 
     
     public Map() {
         //empty constructor for javabeans
+    }
+    
+    public String[][] getLocations() {
+        return Location;
+    }
+    
+    public Point getCurrentLocation() {
+        return currentLocation;
+    }
+    
+    public void setCurrentLocation(Point point) {
+        this.currentLocation = currentLocation;
     }
     
     @Override
