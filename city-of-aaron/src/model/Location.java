@@ -5,6 +5,8 @@
  */
 package model;
 
+import java.io.Serializable;
+import java.util.Arrays;
 /**
  *
  * @author ethanrusson
@@ -47,12 +49,17 @@ public class Location {
         return gameTips;
     }
 
-    public void setGameTips(String[] gameTips) {
-        this.gameTips = gameTips;
+    public void setGameTips(String[] tips) {
+        this.gameTips = tips;
     }
     
     @Override
     public String toString() {
-        return "Location class coming soon";
+        return "Location{"
+                + ",name=" + name
+                + ",description=" + description
+                + ",mapSymbol=" + mapSymbol
+                + ",gameTips=" + Arrays.toString(gameTips)
+                + "}";
     }
 }

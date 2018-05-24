@@ -18,6 +18,7 @@ public class Game implements Serializable{
     private int currentPopulation;
     private int acresOwned;
     private int wheatInStorage;
+    private int currentYear;
     
     public Game() {
         //empty constructor for javabeans
@@ -70,6 +71,16 @@ public class Game implements Serializable{
     public void setWheatInStorage(int wheatInStorage) {
         this.wheatInStorage = wheatInStorage;
     }
+
+    public int getCurrentYear() {
+        return currentYear;
+    }
+
+    public void setCurrentYear(int currentYear) {
+        this.currentYear = currentYear;
+    }
+    
+   
     
     @Override
     public String toString() {
@@ -80,6 +91,7 @@ public class Game implements Serializable{
                 + ", currentPopulation=" + currentPopulation
                 + ", acresOwned=" + acresOwned
                 + ", wheatInStorage=" + wheatInStorage
+                + ", currentYear=" + currentYear
                 + " }";
     }
 }

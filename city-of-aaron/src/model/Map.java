@@ -5,13 +5,15 @@
  */
 package model;
 
+import java.io.Serializable;
 /**
  *
  * @author ethanrusson
  */
 public class Map {
+    
     private String[][] Location;
-    private Point currentLocation; 
+    private Point currentLocation;
     
     public Map() {
         //empty constructor for javabeans
@@ -26,11 +28,13 @@ public class Map {
     }
     
     public void setCurrentLocation(Point point) {
-        this.currentLocation = currentLocation;
+        this.currentLocation = point;
     }
     
     @Override
     public String toString() {
-        return "Map class coming soon";
+        return "Map ({"
+                + ", currentLocation=" + currentLocation
+                + "}";
     }
 }
