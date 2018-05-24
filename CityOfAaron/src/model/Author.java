@@ -5,41 +5,40 @@
  */
 package model;
 
-
 import java.io.Serializable;
 
 /**
  *
  * @author Justin
  */
-public class Animal implements Serializable{
+public class Author implements Serializable{
     
-     private String name;
-     private int age;
+  private String name;
+  private String title;
   
-     public Animal() {
+  public Author() {
       //empty constructor for javabeans
   }
    
-    public String getName() {
-          return name;
+  public String getName() {
+      return name;
   }
     
-    public void setName(String name) {
+  public void setName(String name) {
       this.name = name;
   }
-    public int getAge() {
-         return age;
+  public String getTitle() {
+      return title;
   }
     
-     public void setAge(int age) {
-        this.age = age;
+  public void setTitle(String title) {
+      this.title = title;
   }
-         @Override
-        public String toString() {
-            return "Animal {"
+      @Override
+    public String toString() {
+        return "Author {"
                 + "name=" + name
-                + ", age=" + age
+                + ", title=" + title
                 + " }";
     }           
 }
