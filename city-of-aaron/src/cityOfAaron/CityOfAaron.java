@@ -4,12 +4,14 @@
  * and open the template in the editor.
  */
 
-package aaron;
+package cityOfAaron;
 
 import model.Game;
 import model.Player;
 import model.Storehouse;
 import model.Map;
+import model.Location;
+import model.Point;
 
 /**
  *
