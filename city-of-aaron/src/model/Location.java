@@ -15,7 +15,7 @@ public class Location {
     private String name;
     private String description;
     private String mapSymbol;
-    private String[] gameTips;
+    private String[] gameTips = new String[2];
     
     public Location() {
         //empty constructor for javabeans

@@ -10,50 +10,55 @@ import java.io.Serializable;
  *
  * @author ethanrusson
  */
-public class Storehouse {
-    private String Author[];
-    private String[] animals;
-    private String[] tools;
-    private String[] provisions;
+public class Storehouse implements Serializable{
+    private Author[] author = new Author[3];
+    private InventoryItem[] animals = new InventoryItem[5];
+    private InventoryItem[] tools = new InventoryItem[5];
+    private InventoryItem[] provisions = new InventoryItem[5];
     
     public Storehouse() {
         //empty constructor for javabeans
     }
 
-    public String[] getAuthor() {
-        return Author;
+    public Author[] getAuthor() {
+        return author;
     }
 
-    public void setAuthor(String[] Author) {
-        this.Author = Author;
+    public void setAuthor(Author[] author) {
+        this.author = author;
     }
 
-    public String[] getAnimals() {
+    public InventoryItem[] getAnimals() {
         return animals;
     }
 
-    public void setAnimals(String[] animals) {
+    public void setAnimals(InventoryItem[] animals) {
         this.animals = animals;
     }
 
-    public String[] getTools() {
+    public InventoryItem[] getTools() {
         return tools;
     }
 
-    public void setTools(String[] tools) {
+    public void setTools(InventoryItem[] tools) {
         this.tools = tools;
     }
 
-    public String[] getProvisions() {
+    public InventoryItem[] getProvisions() {
         return provisions;
     }
 
-    public void setProvisions(String[] provisions) {
+    public void setProvisions(InventoryItem[] provisions) {
         this.provisions = provisions;
     }
     
     @Override 
     public String toString() {
-        return "Storehouse class coming soon";
+        return "Storehouse ({"
+                + ", author=" + author
+                + ", animals=" + animals
+                + ", tools=" + tools
+                + ", provisions=" + provisions
+                + " }";
     }
 }

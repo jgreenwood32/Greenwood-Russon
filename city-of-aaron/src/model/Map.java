@@ -6,6 +6,7 @@
 package model;
 
 import java.io.Serializable;
+
 /**
  *
  * @author ethanrusson
@@ -33,7 +34,7 @@ public class Map {
     
     @Override
     public String toString() {
-        return "Map ({"
+        return "Map {"
                 + ", currentLocation=" + currentLocation
                 + "}";
     }

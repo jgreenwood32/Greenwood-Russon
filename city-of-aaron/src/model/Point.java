@@ -36,6 +36,9 @@ public class Point {
     
     @Override
     public String toString() {
-        return "Point class coming soon";
+        return "Point ({ "
+                + ",row=" + row
+                + ",column=" + column
+                +"}";
     }
 }

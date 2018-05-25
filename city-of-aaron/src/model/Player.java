@@ -27,6 +27,8 @@ public class Player {
     
     @Override
     public String toString() {
-        return "Player class coming soon";
+        return "Player {"
+                + "name=" + name
+                + " }";
     }
 }
