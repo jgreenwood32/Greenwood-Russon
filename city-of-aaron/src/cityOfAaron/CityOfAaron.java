@@ -68,7 +68,9 @@ public class CityOfAaron {
         System.out.println(theAuthor.toString());
         System.out.println(theInventory.toString());
         System.out.println(theProvisions.toString());
-        
+        System.out.println(theLocation.toString());
+        System.out.println(theStorehouse.toString());
+        System.out.println(theMap.toString());
     }
     
 }
