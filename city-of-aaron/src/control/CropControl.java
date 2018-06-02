@@ -29,5 +29,17 @@ public class CropControl {
         return purchase;
     }
     
-            
+    public static double calPeopleFed(int foodToPeople, int storage) {
+    
+        if (foodToPeople <0){
+            return -1;
+        }
+        if (foodToPeople > storage){
+            return-1;
+        }
+        
+        double wheatInStorage = storage - foodToPeople;
+        
+        return wheatInStorage;
+    }   
 }
